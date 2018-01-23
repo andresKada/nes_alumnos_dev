@@ -1,0 +1,31 @@
+
+<div class="row">
+  <div class="col-sm-12 col-md-10  col-md-offset-1 ">
+    <div class="table-responsive">
+      <table class="table table-user-information table-bordered table-list">
+        <thead>
+        <th colspan="2"> <%= get_semester_name(inscripcion.semestr.clave_semestre)%> SEMESTRE</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="info">Carrera: </th>
+            <td><%= inscripcion.carrera.nombre_carrera.to_s %></td>
+          </tr>
+
+          <tr>
+            <th class="info">Periodo Escolar: </th>
+            <td> <%= inscripcion.ciclo.ciclo.to_s  %></td>
+          </tr>
+          <tr>
+            <th class="info">Grupo(s): </th>
+            <td> <%=  inscripcion.grupo.nombre%> </td>     
+          </tr>
+          <tr>
+            <th class="info">Beca </th>
+            <td><%= !inscripcion.beca.nil? ? inscripcion.beca.to_s + "%" : "Sin Beca Asignada" %></td> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

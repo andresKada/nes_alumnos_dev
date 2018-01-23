@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails nes_alumnos_dev: development" uuid="a2f62b74-65c1-43cf-9aa5-79b7eb07f11b">
+      <database-info product="PostgreSQL" version="9.5.10" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>nes_user</user-name>
+      <introspection-schemas>nes_db:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails nes_alumnos_dev: test" uuid="b063498a-8e89-4d06-adc7-0503c63848c6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="Rails nes_alumnos_dev: production" uuid="e385ed17-db6a-4840-b8ef-0bd10f121cab">
+      <database-info product="PostgreSQL" version="9.5.10" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>nes_user</user-name>
+      <introspection-schemas>nes_db:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>

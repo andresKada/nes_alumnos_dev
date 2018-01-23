@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*:not(.fondo){
+  background-image: none !important;
+} 
+
+body {
+    margin-top: 30px;
+    font-family: 'Open Sans';
+}
+
+
+
+@font-face {
+  font-family: 'Open Sans';
+    //src: local('Open Sans'), url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url( font-path('OpenSans-Regular.ttf')) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+    //src: local('Raleway'), url('/fonts/Raleway-Medium.ttf') format('truetype');
+    src: url( font-path('Raleway-Medium.ttf')) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+    //src: local('Lato Normal'), url('/fonts/Lato-Regular_0.ttf') format('truetype');
+    src: url( font-path('Lato-Regular_0.ttf')) format('truetype');
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+     margin: 5px 0 5px 0;
+}
+
+
+h3.margen, h4.margen {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+
+div h4.margen_dos {
+    margin-top: 30px;
+    display: inline;
+    vertical-align: middle;
+}
+
+
+.espaciado {
+	 margin: 25px 0 20px 0;
+
+}
+
+
+hr {
+    margin-top: 4px;
+    margin-bottom: 25px;
+    border: 0;
+    border-top: .5px solid #D7D7D7;
+}
+
+.hr_style {
+    margin-bottom: 5px;
+    border-top: 1px dotted #8c8b8b;
+}
+
+
+
+
+/* 1. Estilos_menú */
+
+
+i.fa-home{
+    display: block;
+    text-align: center;
+    color: #105bad;
+    font-size: 38px;
+    padding: 6px 0px;
+  }
+
+i.fa-calendar-check-o {
+    display: block;
+    text-align: center;
+    color: #ec7c26;
+    font-size: 34px;
+    padding: 6px 0px;
+  }
+
+i.fa-list-alt {
+    display: block;
+    text-align: center;
+    color: #F3A505;
+    font-size: 35px;
+    padding: 6px 0px;
+  }
+
+i.fa-clock-o {
+    display: block;
+    text-align: center;
+    color: #7cad1d;
+    font-size: 38px;
+    padding: 6px 0px;
+  }
+
+i.fa-pencil {
+    display: block;
+    text-align: center;
+    color: #dc413c;
+    font-size: 34px;
+    padding: 6px 0px;
+  }
+
+
+
+span.fa-sign-out{
+    font-size: 17px;
+    margin-right: 1px;
+
+}
+
+span.fa-user {
+   margin-right: 1px;
+   font-size: 17px;
+   
+}
+
+span.text-user {
+    font-size: 13px;
+    font-family: 'Open Sans';
+}
+
+  span.textos_menu {
+    display: block;
+    text-align: center;
+    color: #1a5688;
+    font-size: 16px;
+    font-family: 'Raleway';
+    padding: 3px 10px 3px 7px;
+}
+
+
+.espacio_botones {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.usuario {
+color:#676868;
+font-family: 'Lato';
+font-size: 16px;
+}
+
+.portal_alumnos {
+    font-family: 'Lato';
+    margin-top: 43px;
+    font-size: 22px;
+}
+
+
+
+/* contenedor_general */
+
+ #contenido_principal {
+	width: 100%;
+    height: auto;
+    min-height: 600px;
+}
+
+.vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/* login */
+
+div.panel-heading{
+ font-family: 'Raleway';
+ font-size: 18px;
+ color:#fff;
+}
+
+.input-group-addon {
+    color: #fff;
+    background: #3276B1;
+}
+
+
+div.foto{
+	width: 120px;
+	height:120px;
+    margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+div.foto i.glyphicon-user{
+	font-size: 80px;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #187dd7;
+	padding: 30px;
+	border-radius: 50%;
+}
+
+#margen{
+	margin: 15px 0 30px 0;
+}
+
+
+
+
+
+
+.centro {
+    margin-top: 20px;
+    color:#fff;
+    text-align: center;
+
+}
+
+
+
+.texto-centro {
+	text-align: center;
+    
+}
+
+
+.espacio {
+    margin-top: 40px;
+}
+
+
+
+
+.espacio_2 {
+     margin-top: 20px;
+
+}
+
+
+.nombre {
+    font-size: 18px;
+}
+
+
+
+.form-control-feedback>span.glyphicon.glyphicon-user {
+   right:1px;}
+
+
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    line-height: 34px;
+    text-align: right;
+    pointer-events: none;
+}
+
+
+
+
+/*paneles*/
+
+.panel-info>.panel-heading {
+    color:#fff;
+    background-color: #006395;
+    border-color: #00527c;
+}
+
+
+.panel-success> .panel-heading {
+    color: #fff;
+    background-color: #7cad1d;
+    border-color: #6c9719;
+}
+
+
+.panel-warning {
+  border-color: #ec7c26;
+}
+.panel-warning > .panel-heading {
+  color: #ffffff;
+  background-color: #ec7c26;
+  border-color: #ec7c26;
+}
+
+.panel-yellow{
+    border-color: #EA9807;
+}
+
+
+.panel-yellow > .panel-heading {
+  color: #ffffff;
+  background-color: #EA9807;
+  border-color: #EA9807;
+}
+.panel-yellow > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EA9807;
+}
+.panel-yellow > .panel-heading .badge {
+  color: #fff;
+  background-color: #EA9807;
+}
+.panel-yellow > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #EA9807;}
+
+
+.navbar-inverse {
+    background-color: #006395;
+    border-color: #00527c;
+}
+
+
+
+
+
+
+
+/* Media queries */
+
+@media (max-width: 600px) {
+
+    h3 {
+     font-size: 20px;
+    }
+
+   
+   .circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 8px 12px;
+    background-color: #ec7c26;
+    border-color: #cd6312;
+    color:#ffffff;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    letter-spacing: normal;
+    line-break: auto;
+
+  }
+}
+
+
+@media (max-width: 990px) {
+
+ div.btn .espacio_botones {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media (max-width: 766px) {
+   p.portal_alumnos {
+    margin-top: 10px;
+    font-size: 19px;
+    text-align: center;
+    }
+
+ }
+
