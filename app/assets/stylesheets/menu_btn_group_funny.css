@@ -53,8 +53,8 @@ background-color: #7cad1d;
 
 
 .btn-nav .fa {
-    padding-top: 12px;
-	font-size: 40px;
+    padding-top: 8px;
+	font-size: 25px;
 }
 
 .btn-nav.active p {
@@ -100,7 +100,7 @@ background-color: #7cad1d;
 
 @media (max-width: 400px) {
 
-    i.fa-user , i.fa-list-alt, i.fa-calendar-check-o, i.fa-pencil, i.fa-clock-o {
+    i.fa-user , i.fa-list-alt, i.fa-calendar-check-o, i.fa-pencil, i.fa-clock-o, i.fa.fa-building, i.fa.fa-usd {
     font-size: 2px;
     
   }

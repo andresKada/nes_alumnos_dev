@@ -5,6 +5,7 @@ class HomeController < ApplicationController
     @usuario = current_user  
     @periodo_actual = current_ciclo.ciclo
     @inscripciones = @usuario.alumno.inscripciones.select{|item| item.ciclo_id == current_ciclo.id}
+    user_data
   end
   
   def show_inscripciones

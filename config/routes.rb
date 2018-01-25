@@ -31,7 +31,14 @@ Rails.application.routes.draw do
     get :actualizar1 , :on => :collection
   end
 
-  
+  resources :estancias_profesionales , :only => :index do
+    get :shows, :on => :collection
+  end
+
+
+  resources :adeudos , :only => :index do
+    get :shows, :on => :collection
+  end
   get "restricts/access_denied"
 
  

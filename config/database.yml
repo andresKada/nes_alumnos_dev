@@ -40,7 +40,7 @@ development:
   host: localhost
   encoding: utf8
   pool: 5
-  database: nes_db
+  database: nes_db_20_05_17
   username: nes_user
   password: andres92
 

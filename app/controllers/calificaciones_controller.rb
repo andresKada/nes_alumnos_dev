@@ -17,6 +17,7 @@ class CalificacionesController < ApplicationController
     rescue Exception => error
       @mensaje = error
     end
+
   end
   
   #
