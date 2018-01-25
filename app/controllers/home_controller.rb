@@ -12,6 +12,7 @@ class HomeController < ApplicationController
      @usuario = current_user
      @inscripciones = @usuario.alumno.inscripciones
      @inscripciones_agrupadas = @inscripciones.group_by { |inscripcion| inscripcion.semestr.clave_semestre  }
+     user_data
   end
   
   def user_data

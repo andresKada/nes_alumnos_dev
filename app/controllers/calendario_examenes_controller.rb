@@ -1,6 +1,7 @@
 class CalendarioExamenesController < ApplicationController
  include SendDoc
   def index
+    info_alumno
     @ciclos=Ciclo.where("actual=?",true).first
     @alumnox = Alumno.where("user_id=?",current_user.id.to_i).first
     puts "id_alumno"
@@ -27,10 +28,10 @@ class CalendarioExamenesController < ApplicationController
           redirect_to :action => :reporte_calendario,:alumno_id=>@alumnox
         end
       end
-
     end
 
   def calendario_examen
+    info_alumno
     @calendario_exam=[]
     @alumno_id= params[:alumno_id]
     @todo= Inscripcion.joins(:carrera).joins(:alumno).joins(:grupo).joins(:ciclo).joins(:semestr).where('alumnos.id=? and actual=?',@alumno_id,true)
@@ -165,5 +166,15 @@ class CalendarioExamenesController < ApplicationController
         'pdf')
     end
   end
+
+ def info_alumno
+   @usuario = current_user
+   @periodo_actual = current_ciclo.ciclo
+   ciclo = Ciclo.get_ciclo_at_fecha(Date.today) || current_ciclo
+   @inscripciones = @usuario.alumno.inscripciones.select{|item| item.ciclo_id == ciclo.id} if ciclo.present?
+   @last_inscripcion = @inscripciones.sort_by{|i| i.semestr.clave}.last
+   @last_inscripcion = @usuario.alumno.inscripciones.sort_by{|i| i.semestr.clave}.last if @last_inscripcion.blank?
+   @profesor =  @usuario.alumno.profesor || Profesor.new
+ end
 
 end
